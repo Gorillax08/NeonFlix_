@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEONFLIX | Movie Explorer</title>
+
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+
+    <header class="hero">
+        <nav class="navbar">
+            <a href="#" class="logo">NEON<span>FLIX</span></a>
+        </nav>
+
+        <div class="hero-content">
+            <h1>ENTER THE <span>UPSIDE DOWN.</span></h1>
+
+            <p class="hero-text">
+                Discover movies, explore TV shows and find your next obsession.
+            </p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search movies or TV shows..."
+                >
+                <button id="searchBtn">SEARCH</button>
+            </div>
+
+            <div class="filters">
+                <select id="type">
+                    <option value="movie">Movies</option>
+                    <option value="tv">TV Shows</option>
+                </select>
+
+                <select id="genre">
+                    <option value="">All Genres</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">TRENDING NOW</p>
+                    <h2>🔥 TOP 10 POPULAR</h2>
+                </div>
+            </div>
+
+            <div id="top10" class="movie-grid"></div>
+        </section>
+
+        <section class="catalogue">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">YOUR NEXT WATCH</p>
+                    <h2>EXPLORE TITLES</h2>
+                </div>
+            </div>
+
+            <p id="status" class="status">Loading movies...</p>
+
+            <div id="movies" class="movie-grid"></div>
+
+            <div class="pagination">
+                <button id="prevBtn">← PREVIOUS</button>
+                <span id="pageNumber">PAGE 1</span>
+                <button id="nextBtn">NEXT →</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>NEONFLIX © 2026 | Powered by TMDB & OMDb</p>
+        <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-box">
+            <button id="closeBtn" class="close-btn" aria-label="Close details">
+                ✕
+            </button>
+
+            <div id="details">Loading details...</div>
+        </div>
+    </div>
+
+    <script src="./Bot1.js"></script>
+
+</body>
+</html>
